@@ -1,0 +1,33 @@
+openapi: 3.0.1
+info:
+  title: Wolfram API Tool
+  description: API per interrogare Wolfram Alpha
+  version: "1.0.0"
+servers:
+  - url: https://YOUR-RENDER-URL.onrender.com
+paths:
+  /ask:
+    post:
+      operationId: askWolfram
+      summary: Invia una query a Wolfram Alpha
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  example: "integrate x^2"
+      responses:
+        '200':
+          description: Risposta da Wolfram Alpha
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  answer:
+                    type: string
+                    example: "1/3 x^3 + constant"
