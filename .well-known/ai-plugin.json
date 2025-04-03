@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Wolfram API Tool",
+  "name_for_model": "wolfram_api_tool",
+  "description_for_human": "Chiedi qualsiasi cosa a Wolfram Alpha",
+  "description_for_model": "Interroga Wolfram Alpha per problemi matematici e scientifici.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://wolfram-api-gpt.onrender.com/openapi.yaml"
+  },
+  "logo_url": "https://www.wolfram.com/favicon.ico",
+  "contact_email": "giovanni@example.com",
+  "legal_info_url": "https://www.wolfram.com/legal"
+}
